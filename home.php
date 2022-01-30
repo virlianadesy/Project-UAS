@@ -1,4 +1,4 @@
- <!-- page home -->
+<!-- page home -->
     <div class="row">
         <div class="col-md-12">
             <h2>Welcome Admin</h2>      

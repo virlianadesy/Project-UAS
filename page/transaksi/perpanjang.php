@@ -1,3 +1,4 @@
+<!-- page perpanjang buku -->
 <?php
 
 	$id = $_GET['id'];

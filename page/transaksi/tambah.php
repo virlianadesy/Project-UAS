@@ -1,3 +1,4 @@
+<!-- page tambah peminjam -->
 <?php
 
 	$tgl_pinjam = date("d-m-Y");
@@ -9,62 +10,61 @@
 ?>
 
 <div class="panel panel-default">
-<div class="panel-heading">
-			Tambah Peminjaman
+    <div class="panel-heading">
+		Tambah Peminjaman
 	</div>
-<div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                   
-                                    <form method="POST" onsubmit="return validasi(this)">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">                   
+                <form method="POST" onsubmit="return validasi(this)">
 
-                                    	<div class="form-group">
-                                            <label>Judul Buku</label>
-                                            <select class="form-control" name="buku">
-                                                <?php
-                                            		$sql = $koneksi->query("select * from tb_buku order by id");
+                    <div class="form-group">
+                        <label>Judul Buku</label>
+                        <select class="form-control" name="buku">
+                            <?php
 
-                                            		while ($data=$sql->fetch_assoc()) {
-                                            			echo "<option value='$data[id].$data[judul]'>$data[judul]</option>";
-                                            		}
-                                            	?>
-                                            </select>
-                                        </div>
+                                $sql = $koneksi->query("select * from tb_buku order by id");
 
-                                        <div class="form-group">
-                                            <label>Nim dan Nama</label>
-                                            <select class="form-control" name="nama">
-                                                <?php
-                                            		$sql = $koneksi->query("select * from tb_anggota order by nim");
+                                while ($data=$sql->fetch_assoc()) {
+                                    echo "<option value='$data[id].$data[judul]'>$data[judul]</option>";
+                                }
 
-                                            		while ($data=$sql->fetch_assoc()) {
-                                            			echo "<option value='$data[nim].$data[nama]'>$data[nim] $data[nama]</option>";
-                                            		}
-                                            	?>
-                                            </select>
-                                        </div>
+                            ?>
+                        </select>
+                    </div>
 
-                                        <div class="form-group">
-                                            <label>Tanggal Pinjam</label>
-                                            <input class="form-control" type="text" name="tgl_pinjam" id="tgl" value="<?php echo $tgl_pinjam;?>" readonly />
-                                        </div>
+                    <div class="form-group">
+                        <label>Nim dan Nama</label>
+                        <select class="form-control" name="nama">
+                            <?php
 
-                                        <div class="form-group">
-                                            <label>Tanggal Kembali</label>
-                                            <input class="form-control" type="text" name="tgl_kembali" id="tgl" value="<?php echo $kembali;?>" readonly />
-                                        </div>
+                                $sql = $koneksi->query("select * from tb_anggota order by nim");
 
-                                        <div> 
+                                while ($data=$sql->fetch_assoc()) {
+                                    echo "<option value='$data[nim].$data[nama]'>$data[nim] $data[nama]</option>";
+                                }
 
-                                        	<input type="submit" name="simpan" value="Simpan" style="margin-top: 5px" class="btn btn-primary">
+                            ?>
+                        </select>
+                    </div>
 
-                                        </div>
+                    <div class="form-group">
+                        <label>Tanggal Pinjam</label>
+                        <input class="form-control" type="text" name="tgl_pinjam" id="tgl" value="<?php echo $tgl_pinjam;?>" readonly />
+                    </div>
 
-                                </div>
-                            </form>
-                        </div>
-        		</div>
+                    <div class="form-group">
+                        <label>Tanggal Kembali</label>
+                        <input class="form-control" type="text" name="tgl_kembali" id="tgl" value="<?php echo $kembali;?>" readonly />
+                    </div>
+
+                    <div> 
+                        <input type="submit" name="simpan" value="Simpan" style="margin-top: 5px" class="btn btn-primary">
+                    </div>      
+                </form>
+            </div>
         </div>
+    </div>
 </div>
 
 <?php

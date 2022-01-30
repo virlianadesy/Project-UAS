@@ -12,6 +12,7 @@ html {
 }
 body {
   margin: 0;
+  background: #81B29A;
 }
 article,
 aside,
@@ -276,8 +277,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: 4f5467;
-  background-image: url('../img/b10.jpg!d');
+  
   background-size: cover;
 }
 input,

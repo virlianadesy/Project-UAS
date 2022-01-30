@@ -18,7 +18,7 @@ body {
 
  #wrapper {
     width: 100%;
-    background:#516673;
+    background:#81B29A;
 }
 
 #page-wrapper {
@@ -198,7 +198,7 @@ color: #8d8888;
 
 
 .user-image {
-    margin: 25px auto;
+margin: 25px auto;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 50%;
@@ -208,12 +208,12 @@ max-width:170px;
 
 .navbar-cls-top .navbar-brand {
     color: #fff;
-background: #cbb2ae;
-width: 260px;
-text-align: center;
-height: 60px;
-font-size: 30px;
-font-weight: 700;
+    background: #F2CC8F;
+    width: 260px;
+    text-align: center;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 700;
 }
 .active-menu {
     background-color:#C90000!important;
@@ -252,9 +252,8 @@ font-weight: 700;
 }
 .sidebar-collapse .nav > li > a {
     color:#fff;
-    background:#516673;
+    background:#81B29A;
     text-shadow:none;
-    
 }
 .sidebar-collapse > .nav > li > a {
     padding:15px 10px;
@@ -265,7 +264,7 @@ font-weight: 700;
 .sidebar-collapse .nav > li > a:hover,
 .sidebar-collapse .nav > li > a:focus {
     
-    background:#4f5467;
+    background:#F2CC8F;
     outline:0;
 }
 
@@ -277,8 +276,6 @@ font-weight: 700;
     left:20px;
     width:15px;
     height:1px;
-    background:url('../img/b10.jpg!d');
-    background-size:cover;
     top:20px;
 }
 .nav-second-level > li > a:after,
@@ -303,17 +300,15 @@ font-weight: 700;
 }
 .navbar-side {
     border:none;
-    background-color: #516673;
-    
+    background-color: #81B29A;
 }
 .navbar-cls-top {
-    background:#516673;
+    background:#81B29A;
     border-bottom:none;
-    
 }
 .navbar-cls-top .navbar-brand:hover {
 
-background: #cbb2ae;
+background: #F2CC8F;
 color:#fff;
 
 }
